@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>JALA Academy</h1>
+    <h2>Create an Account</h2>
+    <article>
+        <p>
+            Learn Everything on Real-Time Scenarios
+        </p>
+
+        <div class="container">
+            <h3>Sign up</h3>
+            <form action="/signup" method="POST">
+                <div class="input-block">
+                    <label for="email">
+                        <span>Email:</span>
+                    </label>
+                    <input type="email" id="email" name="email" required>
+                    <i class="fa fa-envelope"></i>
+                </div>
+
+                <div class="input-block">
+                    <label for="password">
+                        <span>Password:</span>
+                    </label>
+                    <input type="password" id="password" name="password" required>
+                    <i class="fa fa-lock"></i>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                <form class="admin-login-form" action="/signup">
+                    <input type="submit" value="Sign up">
+                </div>
+            </form>
+            
+            <div class="divider">
+                <hr>
+                <div class="or">OR</div>
+                <hr>
+            </div>
+            
+            <form class="admin-login-form" action="/">
+                <input type="submit" value="Sign in">
+            </form>
+        </div>
+    </article>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

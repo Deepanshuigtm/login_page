@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>JALA Academy</h1>
+    <h2>Login Credentials</h2>
+    <p>Email: training@jalaacademy.com</p>
+    <p>Password: jobprogram</p>
+    <article>
+        <p>
+            Learn Everything on Real-Time Scenarios
+        </p>
+        
+        <div class="container">
+            <h3>Sign in</h3>
+            <form id="loginForm">
+                <div class="input-block">
+                    <label for="email">
+                      <span>Email:</span>
+                    </label>
+                    <input type="email" id="email" required>
+                    <i class="fa fa-envelope"></i>
+                </div>
+      
+                <div class="input-block">
+                    <label for="password">
+                      <span>Password:</span>
+                    </label>
+                    <input type="password" id="password" required>
+                    <i class="fa fa-lock"></i>
+                </div>
+      
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="checkbox" id="rememberMe">
+                        <label class="checkbox-label" for="rememberMe">Remember me</label>
+                    </div>
+                </div>
+      
+                <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                    <input type="submit" value="Sign in">
+                </div>
+                <div class="forgot-password"> <a href="/takeforgot">Forgot password</a></div>
+            </form>
+      
+            <div class="divider">
+                <hr>
+                <div class="or">OR</div>
+                <hr>
+            </div>
+      
+            <form class="admin-login-form" action="/signin" method="POST">
+                <input type="submit" value="Admin Login">
+            </form>
+        </div>
+        <div class="signup"> <a href="/takesignup">Sign up</a></div>
+    </article>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

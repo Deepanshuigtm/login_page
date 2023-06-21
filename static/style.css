@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: gray;
+    font-size: 40px;
+    font-style: normal;
+  }
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  h3 {
+    text-align: center;
+    font-weight: lighter;
+    color: gray;
+  }
+  p {
+    text-align: center;
+    line-height: 0.5;
+    font-family: sans-serif;
+    font-style: oblique;
+  }
+  article p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 5px 10px; /* Increase padding to adjust the width */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    display: table; 
+    margin-bottom: 20px;
+  }
+  
+  label, input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .input-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .input-block label {
+    flex-basis: 80px;
+    margin-right: 5px;
+  }
+
+  .input-block input {
+    border: none;
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .input-block i {
+    margin-left: 5px;
+    color: #999;
+  }
+  
+  .divider {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .divider hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .or {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .admin-login-form input {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+  }
+  .admin-login-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+  }
+  .divider .or {
+    margin: 0 10px;
+    color: #999;
+    font-weight: bold;
+  }
+  .forgot-password {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #999;
+    text-align: center;
+    background-color: palegoldenrod;
+  }
+  .checkbox-label {
+    margin-right: 10px;
+  }
+  .signup {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #999;
+    text-align: center;
+    background-color: palegoldenrod;
+  }
